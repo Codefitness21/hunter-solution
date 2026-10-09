@@ -1,0 +1,29 @@
+uuid: 591ea2f0-c0f2-46c5-bf43-5f1a2086aab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_concern
+    - node.type.solution
+    - taxonomy.vocabulary.concern
+id: node.solution.field_concern
+field_name: field_concern
+entity_type: node
+bundle: solution
+label: concern
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      concern: concern
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

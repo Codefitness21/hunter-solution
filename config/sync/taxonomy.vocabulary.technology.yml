@@ -1,0 +1,9 @@
+uuid: 5c134b50-c451-4958-9702-feadace1524a
+langcode: en
+status: true
+dependencies: {  }
+name: technology
+vid: technology
+description: 'What kind of technology are you looking for?'
+weight: -8
+new_revision: false

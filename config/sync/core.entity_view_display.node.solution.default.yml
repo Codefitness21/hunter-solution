@@ -1,0 +1,69 @@
+uuid: d4810964-4bf4-48c9-911e-58e25c1245cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.solution.field_concern
+    - field.field.node.solution.field_description
+    - field.field.node.solution.field_market
+    - field.field.node.solution.field_product_page
+    - field.field.node.solution.field_technology
+    - node.type.solution
+  module:
+    - link
+    - text
+    - user
+id: node.solution.default
+targetEntityType: node
+bundle: solution
+mode: default
+content:
+  field_concern:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_market:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_product_page:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_technology:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

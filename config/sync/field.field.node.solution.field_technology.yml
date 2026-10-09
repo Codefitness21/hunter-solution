@@ -1,0 +1,29 @@
+uuid: 524dc064-1ef4-4e74-b60b-34f46d323565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technology
+    - node.type.solution
+    - taxonomy.vocabulary.technology
+id: node.solution.field_technology
+field_name: field_technology
+entity_type: node
+bundle: solution
+label: technology
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      technology: technology
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

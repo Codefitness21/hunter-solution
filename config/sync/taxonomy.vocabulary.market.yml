@@ -1,0 +1,9 @@
+uuid: 6b87a2e9-c882-46e2-be35-ab29cbe5f6f8
+langcode: en
+status: true
+dependencies: {  }
+name: market
+vid: market
+description: 'What are you managing?'
+weight: -10
+new_revision: false

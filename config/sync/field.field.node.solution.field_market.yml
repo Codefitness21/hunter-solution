@@ -1,0 +1,29 @@
+uuid: 6b9bda13-508a-4a13-bfbc-f14a313e08ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_market
+    - node.type.solution
+    - taxonomy.vocabulary.market
+id: node.solution.field_market
+field_name: field_market
+entity_type: node
+bundle: solution
+label: market
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      market: market
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
