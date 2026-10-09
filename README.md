@@ -1,1 +1,1 @@
-# hunter-solution
+# hunter-solutions
